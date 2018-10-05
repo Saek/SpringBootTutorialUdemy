@@ -1,0 +1,6 @@
+pageController:
+  msg:  "Hello from YML"
+  foo: "foo"
+  bar: "bar"
+  
+my.secret: ${random.int}
