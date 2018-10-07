@@ -1,0 +1,7 @@
+environments:
+    development:
+        url: http://thisisdevurl.com
+        name: develop setup
+    production:
+        url: http://thisisprodurl.com
+        name: production setup
