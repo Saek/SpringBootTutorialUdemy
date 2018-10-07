@@ -1,0 +1,18 @@
+{
+  "name": "bower",
+  "homepage": "https://github.com/Saek/SpringBootTutorialUdemy",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "src/main/resources/static/lib/"
+  ],
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
