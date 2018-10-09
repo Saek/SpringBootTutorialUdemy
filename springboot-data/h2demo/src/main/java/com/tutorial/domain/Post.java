@@ -1,6 +1,8 @@
 package com.tutorial.domain;
 
 import java.util.Date;
+
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -14,7 +16,10 @@ public class Post {
 	private Long id;
 	
 	private String title;
+	
+	@Column(columnDefinition = "TEXT")
 	private String body;
+	
 	private Date postedOn;
 	
 	// Author
@@ -60,6 +65,20 @@ public class Post {
 	public void setPostedOn(Date postedOn) {
 		this.postedOn = postedOn;
 	}
-	
+
+	public Author getAuthor() {
+		return author;
+	}
+
+	public void setAuthor(Author author) {
+		this.author = author;
+	}
+
+	@Override
+	public String toString() {
+		return "Post [id=" + id + ", title=" + title + ", body=" + body + ", postedOn=" + postedOn + ", author="
+				+ author + "]";
+	}
+
 }
 
